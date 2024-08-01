@@ -1,0 +1,280 @@
+@media screen and (max-width: 820px) {
+  .header-title {
+    flex: 1;
+  }
+
+  ul#main-menu {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background-color: #404142;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: all 0.5s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  ul#main-menu.show {
+    display: flex;
+    position: static;
+  }
+
+  .inner-header {
+    display: block;
+  }
+
+  #toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  ul#main-menu a {
+    padding: 10px 20px;
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  ul#main-menu a:hover {
+    background-color: #6d6e70;
+  }
+}
+
+/* banner */
+
+@media (min-width: 1024px) {
+  #banner {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #banner {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #banner h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #banner h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  #banner .btn-get-started,
+  #banner .btn-watch-video {
+    font-size: 13px;
+  }
+}
+
+@media (max-height: 500px) {
+  #banner {
+    height: 120vh;
+  }
+}
+
+/* lịch sử */
+@media (max-width: 768px) {
+  .wpb-row-center {
+    display: none;
+  }
+
+  .about-wpb-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wpb-row-content {
+    order: 1;
+  }
+
+  .wpb-row-title {
+    order: 2;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1220px) {
+  .wpb-row-center {
+    display: none;
+  }
+
+  .about-wpb-row {
+    flex-direction: row;
+  }
+
+  .about-section {
+    flex: 1;
+    margin: 0.5em;
+  }
+
+  .wpb-row-title h1 {
+    font-size: 36px;
+  }
+
+  .wpb-row-title p {
+    font-size: 14px;
+  }
+
+  .vc_single_image-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* kodfun-galeri */
+@media (max-width: 835px) {
+  .kodfun-galeri {
+    display: none;
+  }
+
+  .testimonials {
+    margin-top: 20px;
+  }
+
+  .testimonials-slider {
+    width: 100%;
+  }
+}
+
+/* menu */
+.product-item {
+  flex: 1 1 25%; /* Số lượng cột mặc định khi không có media query */
+  max-width: calc(25% - 20px); /* Độ rộng mặc định của mỗi sản phẩm */
+}
+
+@media (max-width: 1200px) {
+  .product-item {
+    flex: 1 1 50%;
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .product-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-item {
+    flex-basis: calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    max-height: calc(50% - 30px);
+  }
+}
+
+/* testimonials */
+@media screen and (max-width: 768px) {
+  .testimonials {
+    width: 100%;
+  }
+  .swiper-slide {
+    width: 100%;
+  }
+  .swiper-img {
+    width: 100%;
+    height: auto;
+  }
+  .swiper-h1 {
+    font-size: 38px;
+  }
+  .swiper-p {
+    font-size: 18px;
+  }
+}
+
+/* khuyến mãi */
+@media (max-width: 768px) {
+  .portfolio-item {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-item {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+/* contact */
+@media (max-width: 750px) {
+  .row-contact {
+    display: block;
+  }
+
+  .col-lg-6,
+  .col-lg-3,
+  .col-lg-7,
+  .col-lg-5 {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .col-lg-7,
+  .col-lg-5 {
+    height: auto;
+  }
+
+  .contact .info-box {
+    padding: 10px;
+  }
+
+  .col-lg-5 label .input,
+  .col-lg-5-comment textarea {
+    width: 100%;
+  }
+
+  .col-lg-5-button button {
+    width: 100%;
+  }
+
+  iframe {
+    height: 200px;
+  }
+}
+
+/* footer */
+@media (max-width: 768px) {
+  #footer .copyright,
+  #footer .credits {
+    float: none;
+    text-align: center;
+    padding: 2px 0;
+  }
+}
+
+/* 
+giỏ hàng */
+@media screen and (min-width: 768px) {
+  .modal-content {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modal-content {
+    width: 90%;
+    margin: auto;
+  }
+
+  .modal-body {
+    max-height: 60vh;
+    overflow-y: auto;
+  }
+}

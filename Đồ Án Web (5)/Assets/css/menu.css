@@ -1,0 +1,149 @@
+.wrapper-menu {
+  width: 1100px; /* hoặc kích thước bạn muốn */
+  overflow: hidden;
+}
+
+.product-items {
+  display: flex;
+  transition: all 0.5s ease;
+  scroll-behavior: smooth;
+}
+
+.product-item {
+  flex: 0 0 220px; /* kích thước của mỗi mục sản phẩm */
+  margin-right: 20px; /* khoảng cách giữa các mục sản phẩm */
+}
+
+.product-items {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ddd;
+  padding: 12px;
+}
+
+.product-item {
+  width: 19%;
+  background-color: #fff;
+  padding: 12px;
+  text-align: center;
+}
+
+.product-item img {
+  width: 100%;
+  height: 15vw;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.product-item:hover img {
+  transform: scale(1.1); /* Phóng to 110% khi di chuột vào */
+}
+
+.product-item-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-item button {
+  margin-top: 12px;
+  height: 30px;
+  padding: 0 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.product-item button:hover {
+  background-color: aqua;
+}
+
+/*----------------*/
+.cart {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.cart h2 {
+  margin-bottom: 20px;
+}
+
+.cart table {
+  width: 100%;
+}
+
+.cart table thead tr th:first-child {
+  text-align: left;
+}
+
+.cart table tr td {
+  border-bottom: 1px solid #ddd;
+  padding: 12px 0;
+}
+
+.cart table thead tr th:last-child {
+  text-align: right;
+}
+
+.cart table tbody tr td:last-child {
+  text-align: right;
+}
+
+.cart {
+  position: fixed;
+  min-height: 100vh;
+  min-width: 400px;
+  right: 0;
+  top: 0;
+  background-color: aquamarine;
+  padding: 12px 20px;
+  overflow-y: scroll;
+}
+
+.price-total {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.price-total p {
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.cart-icon {
+  cursor: pointer;
+  text-align: right;
+  padding: 10px 10px;
+  margin-right: 5px;
+}
+
+.cart-icon p {
+  font-size: 25px;
+}
+
+.wrapper-menu {
+  position: relative;
+}
+
+.buttons {
+  position: absolute;
+  top: 45%;
+  /* left: 5%; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff5;
+  color: #fff;
+  border: none;
+  font-family: monospace;
+  font-weight: bold;
+}
